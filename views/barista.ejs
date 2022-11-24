@@ -10,22 +10,14 @@
 </head>
 <body>
   <a href="/"><img src="startrek.png" alt="coffee logo"></a>
-
   <% if (user.local.email) { %>
     <p class="username">
-      <!-- <strong>Barista</strong> -->
-        <!-- <strong>id</strong>: <%= user._id %><br> -->
         <strong>First Name</strong>: <%= user.local.firstName %><br>
         <strong>Last Name</strong>: <%= user.local.lastName %><br>
-        <!-- <strong>email</strong>: <%= user.local.email %><br>
-        <strong>password</strong>: <%= user.local.password %> -->
     </p>
-
-    
 <% } %>
-
   <section class="container">
-    <h2>Orders!</
+    <h2>ORDERS:</
     <ul class="orderList">
       <% for(var i=0; i<orders.length; i++) {
           let completedClass = ''
@@ -46,13 +38,8 @@
       </li>
         <% } %>
     </ul>
-            
-        
+    <a href="/logout"><button>Log Out</button></a>
   </section>
-
-  <a href="/logout"><button>Log Out</button></a>
-
 <script src="main.js"></script>
-
 </body>
 </html>
