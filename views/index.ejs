@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <title>Star Trek Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60e865119.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <a href="/"><img class="logo" src="startrek.png" alt="coffee logo"></a>
+  <section class="container-index">
+            <form action="/coffeeOrderForm" method="POST">
+                <section>
+                    <h3>Customer's Name</h3>
+                    <input type="text" class="info name" name="name" placeholder="Name">
+                </section>
+                <section>
+                    <h3>Size</h3>
+                    <label for="size">Tall</label>
+                    <input required type="radio" class="info size" name="size" value="Tall">
+                    <label for="size">Grande</label>
+                    <input type="radio" class="info size" name="size" value="Grande">
+                    <label for="size">Venti</label>
+                    <input type="radio" class="info size" name="size" value="Venti">
+                </section>
+                <section>
+                    <h3>Beverage</h3>
+                    <label for="beverage">Hot Coffee</label>
+                    <input required type="radio" class="info beverage" name="beverage" value="Tazania Peaberry">
+                    <label for="beverage">Cold Brew</label>
+                    <input type="radio" class="info beverage" name="beverage" value="Hawaii Kona">
+                    <label for="beverage">Latte</label>
+                    <input type="radio" class="info beverage" name="beverage" value="Latte">
+                </section>
+                <section>
+                    <h3>Flavor</h3>
+                    <label>
+                            Vanilla
+                            <input required type="radio" name="flavor" value="Vanilla">
+                    </label>
+                    <label>
+                            Mocha
+                            <input type="radio" name="flavor" value="Mocha">
+                    </label>
+                    <label>
+                            Hazelnut
+                            <input type="radio" name="flavor" value="Hazelnut">
+                    </label>
+                </section>
+                <section>
+                    <h3>Milk Options</h3>
+                    <label>
+                            No Milk
+                            <input required type="radio" name="milkOptions" value="No Milk">
+                    </label>
+                    <label>
+                            Whole Milk
+                            <input type="radio" name="milkOptions" value="Whole Milk">
+                    </label>
+                    <label>
+                            2% Milk
+                            <input type="radio" name="milkOptions" value="2% Milk">
+                    </label>
+                    <label>
+                            Oat Milk
+                            <input type="radio" name="milkOptions" value="Oat Milk">
+                    </label>
+                    <label>
+                            Almond Milk
+                            <input type="radio" name="milkOptions" value="Almond Milk">
+                    </label>
+                    <label>
+                            Soy Milk
+                            <input type="radio" name="milkOptions" value="Soy Milk">
+                    </label>
+                </section>
+                <section>
+                    <label for="note">Notes:</label>
+                    <input class="notes-index" type="text" class="info note" name="note" placeholder="Notes">
+                </section>
+              <button class="submit-btn-index" type="submit">Submit</button>
+            </form>
+                <a href="/login"><button>Log In (Employees Only)</button></a>
+                <a href="/signup"><button>Sign Up (Employees Only)</button></a>
+        </section>
+  </section>
+<script src="main.js"></script>
+
+</body>
+</html>

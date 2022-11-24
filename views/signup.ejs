@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60e865119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="/"><img src="startrek.png" alt="coffee logo"></a>
+
+  <section class="container">
+            <h2>Sign Up</h2>
+            
+            <h2><a href="/login">Log In</a></h2>
+            
+            <form action="/signup" method="post">
+                <input required class="inputs" type="text" name="firstName" placeholder="First Name">
+                <input required class="inputs" type="text" name="lastName" placeholder="Last Name">
+                <input class="inputs" type="text" name="email" placeholder="Email">
+                <input class="inputs" type="password" name="password" placeholder="Password">
+                <section class="submit-btn">
+                  <button  type="submit">Submit</button>
+                  <a href="/"><button class="submit-btn">Home</button></a>
+                </section>
+              </form>
+        
+  </section>
+ 
+<script src="main.js"></script>
+
+</body>
+</html>
