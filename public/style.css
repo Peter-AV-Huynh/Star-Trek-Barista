@@ -2,23 +2,28 @@
   text-decoration: line-through;
 }
 body{
-  background: rgb(0, 98, 65);
+  background: url(galaxy.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Arsenal', sans-serif;
   font-size: 1.3rem;
+  color: white;
+}
+nav{
+  width: 100%;
 }
 .container{
   text-align: center;
-  background: white;
-  border: 1px solid black;
+  background: rgb(45, 62, 117);
+  border: 1px solid white;
   border-radius: 1rem;
   width: 50%;  
   margin: 1% 27%;
 }
 .container-index{
   text-align: center;
-  background: white;
-  border: 1px solid black;
+  background: rgb(45, 62, 117);
+  border: 1px solid white;
   border-radius: 1rem;
   width: 50%;  
   margin: -12% 26%;
@@ -55,5 +60,12 @@ img{
 }
 .username{
   float: right;
+}
+button{
+  background: black;
+  border: 1.5px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 3px 5px;
 }
 
